@@ -198,7 +198,7 @@ public class MainActivity extends AppCompatActivity {
             holder.view_more.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Model m= DATA.get(position);
+                   DATA=mDataList.get(position);
 
                     Intent intent = new Intent(MainActivity.this, More_list.class);
                     intent.putExtra("Position",position);
